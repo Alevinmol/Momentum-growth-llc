@@ -17,30 +17,20 @@
 
 <body>
 
-<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-    <div class="container-fluid">
-        <a class="navbar-brand" href="#">Momentum Growth</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
-            aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+<nav class="navbar navbar-expand-md navbar-light bg-premium border-bottom sticky-top">
+    <div class="container">
+        <a class="navbar-brand d-flex align-items-center" href="index.html">
+        <img src="img/logo.jpeg" alt="Momentum Growth Logo" class="logo-main">
+        <span class="ms-2 fw-bold d-none d-sm-inline">MOMENTUM GROWTH</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
-            <ul class="navbar-nav me-auto mb-2 mb-md-0">
-                <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="index.html">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="services.html">Services</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="industries.html">Industries</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="faq.html">FAQ</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link nav-btn" class="nav-link active" href="contact.html">Book now</a>
-                </li>
+            <ul class="navbar-nav ms-auto mb-2 mb-md-0 align-items-center">
+                <li class="nav-item"><a class="nav-link px-3" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link px-3" href="faq.html">FAQ</a></li>
+                <li class="nav-item"><a class="nav-link nav-btn active" href="contact.html">Contact us</a></li>
             </ul>
         </div>
     </div>
@@ -48,7 +38,7 @@
 
 <main class="flex-shrink-0">
    <div class="container">
-       <h1 class="text-center mb-3">Contact Me</h1>
+       <h1 class="text-center mb-3">Contact Us</h1>
        <form name="contact" method="POST" data-netlify-recaptcha="true" data-netlify="true">
            <div class="row mb-1">
                <div class="col">
@@ -93,13 +83,15 @@
        </form>
    </div>
  <!-- FOOTER -->
-  <footer>
-    <div class="container">
-      <p>© 2026 Momentum Growth llc. All rights reserved.</p>
-      <p>Phone: (123) 456-7890 | Email: info@something.com</p>
-      <p class="go-birds">
-      go birds 
-      <img src="https://upload.wikimedia.org/wikipedia/en/thumb/8/8e/Philadelphia_Eagles_logo.svg/1200px-Philadelphia_Eagles_logo.svg.png" alt="Eagles logo">
+  <footer class="py-5 border-top">
+    <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center gap-3">
+      <div>
+        <span class="fw-bold">Momentum Growth LLC</span> <span class="opacity-50">· Cleaning Solutions</span>
+      </div>
+      <p class="go-birds mb-0">
+        go birds 
+        <img src="https://upload.wikimedia.org/wikipedia/en/thumb/8/8e/Philadelphia_Eagles_logo.svg/1200px-Philadelphia_Eagles_logo.svg.png" alt="Eagles logo" style="height: 14px;">
+      </p>
     </div>
   </footer>
  </main>

@@ -1,34 +1,27 @@
 <!doctype html>
 <html lang="en">
-
 <head>
-    <title>Contact us</title>
-    <!-- Required meta tags -->
+    <title>Contact Us | Momentum Growth</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
-
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="css/site.css">
     <link rel="icon" type="image/x-icon" href="img/favicon.ico">
 </head>
-
-<body>
+<body class="bg-premium">
 
 <nav class="navbar navbar-expand-md navbar-light bg-premium border-bottom sticky-top">
     <div class="container">
         <a class="navbar-brand d-flex align-items-center" href="index.html">
-        <img src="img/logo.jpeg" alt="Momentum Growth Logo" class="logo-main">
-        <span class="ms-2 fw-bold d-none d-sm-inline">MOMENTUM GROWTH</span>
+            <img src="img/logo.jpeg" alt="Logo" class="logo-main">
+            <span class="ms-2 fw-bold">MOMENTUM GROWTH</span>
         </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-            <span class="navbar-toggler-icon"></span>
-        </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
-            <ul class="navbar-nav ms-auto mb-2 mb-md-0 align-items-center">
+            <ul class="navbar-nav ms-auto mb-2 mb-md-0">
                 <li class="nav-item"><a class="nav-link px-3" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link px-3" href="index.html#industries">Industries</a></li>
+                <li class="nav-item"><a class="nav-link px-3" href="index.html#services">Services</a></li>
                 <li class="nav-item"><a class="nav-link px-3" href="faq.html">FAQ</a></li>
                 <li class="nav-item"><a class="nav-link nav-btn active" href="contact.html">Contact us</a></li>
             </ul>
@@ -36,69 +29,95 @@
     </div>
 </nav>
 
-<main class="flex-shrink-0">
-   <div class="container">
-       <h1 class="text-center mb-3">Contact Us</h1>
-       <form name="contact" method="POST" data-netlify-recaptcha="true" data-netlify="true">
-           <div class="row mb-1">
-               <div class="col">
-                   <label class="form-label">First Name</label>
-                   <input type="text" name="firstName" class="form-control" placeholder="First name"
-                       aria-label="First name" required>
-               </div>
-               <div class="col">
-                   <label class="form-label">Last Name</label>
-                   <input type="text" name="lastName" class="form-control" placeholder="Last name"
-                       aria-label="Last name" required>
-               </div>
-           </div>
-           <div class="row mb-1">
-               <div class="col">
-                   <label class="form-label">Email</label>
-                   <input type="email" name="email" class="form-control" placeholder="Email"
-                       aria-label="Email" required>
-               </div>
-               <div class="col">
-                   <label class="form-label">Phone (optional)</label>
-                   <input type="text" name="phone" class="form-control" placeholder="Phone"
-                       aria-label="Phone">
-               </div>
-           </div>
-           <div class="row mb-1">
-               <div class="col">
-                   <label class="form-label">Subject</label>
-                   <input type="text" name="subject" class="form-control" placeholder="Subject"
-                       aria-label="Subject" required>
-               </div>
-           </div>
-           <div class="row mb-1">
-               <div class="col">
-                   <label class="form-label">Message</label>
-                   <textarea type="text" name="message" class="form-control" placeholder="Message"
-                       aria-label="Message" required></textarea>
-               </div>
-           </div>
-           <div data-netlify-recaptcha="true"></div>
-           <button type="submit" class="btn btn-primary mt-2">Submit</button>
-       </form>
-   </div>
- <!-- FOOTER -->
-  <footer class="py-5 border-top">
-    <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center gap-3">
-      <div>
+<main class="py-huge">
+    <div class="container">
+        <div class="row g-5">
+            <div class="col-lg-5">
+                <small class="badge-premium mb-2 d-inline-block">Get in Touch</small>
+                <h1 class="display-4 fw-bold mb-4">Contact Us</h1>
+                <p class="lead fw-semibold mb-3" style="color: var(--color-deep-green);">
+                    Partner with a company built for recurring commercial support.
+                </p>
+                <p class="opacity-75 mb-5">
+                    We work with commercial clients looking for a long-term cleaning partner through monthly service agreements, flexible recurring schedules, and dependable labor support when needed.
+                </p>
+
+                <div class="contact-details p-4 rounded-4" style="background-color: var(--color-warm-gray);">
+                    <div class="mb-3">
+                        <i class="bi bi-telephone-fill me-2" style="color: var(--color-deep-green);"></i>
+                        <strong>Phone:</strong> (385) 210-6824
+                    </div>
+                    <div class="mb-3">
+                        <i class="bi bi-envelope-fill me-2" style="color: var(--color-deep-green);"></i>
+                        <strong>Email:</strong> operations@momentum-growth-llc.com
+                    </div>
+                    <div>
+                        <i class="bi bi-geo-alt-fill me-2" style="color: var(--color-deep-green);"></i>
+                        <strong>Service Area:</strong> Salt Lake County and surrounding areas.
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-6 offset-lg-1">
+                <div class="card border-0 shadow-sm p-4 p-md-5 rounded-5">
+                    <form name="contact" method="POST" data-netlify-recaptcha="true" data-netlify="true">
+                        <input type="hidden" name="form-name" value="contact" />
+
+                        <div class="mb-4">
+                            <label class="form-label fw-bold small text-uppercase">Your Name</label>
+                            <input type="text" name="name" class="form-control form-premium" placeholder="Your Name" required>
+                        </div>
+
+                        <div class="mb-4">
+                            <label class="form-label fw-bold small text-uppercase">Company Name</label>
+                            <input type="text" name="company" class="form-control form-premium" placeholder="Company Name" required>
+                        </div>
+
+                        <div class="mb-4">
+                            <label class="form-label fw-bold small text-uppercase">Email Address</label>
+                            <input type="email" name="email" class="form-control form-premium" placeholder="Email Address" required>
+                        </div>
+
+                        <div class="mb-4">
+                            <label class="form-label fw-bold small text-uppercase">Industry</label>
+                            <select name="industry" class="form-select form-premium" required>
+                                <option value="" selected disabled>Select your industry</option>
+                                <option value="hospitality">Hospitality</option>
+                                <option value="health-care">Health Care</option>
+                                <option value="offices">Offices</option>
+                                <option value="other">Other Commercial Space</option>
+                            </select>
+                        </div>
+
+                        <div class="mb-4">
+                            <label class="form-label fw-bold small text-uppercase">Message</label>
+                            <textarea name="message" class="form-control form-premium" rows="4" 
+                                placeholder="Tell us about your facility, preferred frequency, and support needs" required></textarea>
+                        </div>
+
+                        <div class="mb-3" data-netlify-recaptcha="true"></div>
+
+                        <button type="submit" class="btn-dark-premium w-100 py-3">Request Information</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+<!-- FOOTER -->
+<footer class="py-5 border-top">
+<div class="container d-flex flex-column flex-md-row justify-content-between align-items-center gap-3">
+    <div>
         <span class="fw-bold">Momentum Growth LLC</span> <span class="opacity-50">· Cleaning Solutions</span>
-      </div>
-      <p class="go-birds mb-0">
+    </div>
+        <p class="go-birds mb-0">
         go birds 
         <img src="https://upload.wikimedia.org/wikipedia/en/thumb/8/8e/Philadelphia_Eagles_logo.svg/1200px-Philadelphia_Eagles_logo.svg.png" alt="Eagles logo" style="height: 14px;">
-      </p>
-    </div>
-  </footer>
- </main>
-    <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous">
-    </script>
-</body>
+        </p>
+</div>
+</footer>
 
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
 </html>

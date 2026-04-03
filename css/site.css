@@ -8,6 +8,8 @@
   --color-deep-green: #3F5F4A;
   --color-soft-sage: #A8B8A5;
   --color-champagne: #CBBE9A;
+  --section-padding: 120px;
+  --bg-gradient: linear-gradient(180deg, var(--color-ivory) 0%, var(--color-soft-sage) 100%);
   
   --text-main: var(--color-black);
   --border-subtle: var(--color-warm-gray);
@@ -15,8 +17,19 @@
 
 body {
   font-family: 'Space Grotesk', sans-serif;
-  color: var(--text-main);
-  background-color: var(--color-ivory); /* Fondo Ivory */
+  color: var(--color-black);
+  /* Aplicamos el degradado y lo fijamos para que no se repita bruscamente al hacer scroll */
+  background: var(--bg-gradient);
+  background-attachment: fixed; 
+  min-height: 100vh;
+  margin: 0;
+}
+
+section, .bg-premium, main {
+  background-color: transparent !important;
+}
+.bg-black-premium {
+  background-color: var(--color-black) !important;
 }
 
 /* NAVBAR */
@@ -40,6 +53,33 @@ body {
 
 .nav-btn:hover {
   background-color: var(--color-deep-green) !important; /* Cambio a verde oscuro al pasar el mouse */
+}
+
+section {
+  padding-top: var(--section-padding);
+  padding-bottom: var(--section-padding);
+  position: relative;
+  display: block;
+  width: 100%;
+  clear: both; /* Evita que elementos flotantes se encimen */
+}
+
+/* Clase de utilidad para secciones que necesiten aún más espacio */
+.py-huge {
+  padding-top: 160px !important;
+  padding-bottom: 160px !important;
+}
+
+/* Ajuste específico para dispositivos móviles (donde 120px es demasiado) */
+@media (max-width: 768px) {
+  section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  .py-huge {
+    padding-top: 80px !important;
+    padding-bottom: 80px !important;
+  }
 }
 
 /* HERO SECTION */
@@ -171,6 +211,143 @@ body {
 .navbar-brand {
   padding-top: 0;
   padding-bottom: 0;
+}
+
+/* SERVICE STRUCTURE STYLES */
+.service-structure {
+  background-color: var(--color-ivory);
+}
+
+.structure-card {
+  background-color: var(--color-deep-green);
+  color: white;
+  border: 1px solid var(--color-warm-gray);
+  padding: 50px 40px;
+  border-radius: 40px;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.structure-card.highlight {
+  background-color: var(--color-deep-green);
+  color: var(--color-ivory);
+}
+
+.card-tag {
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  color: var(--color-champagne);
+  font-weight: 700;
+  margin-bottom: 15px;
+  display: block;
+}
+
+.structure-card h3 {
+  font-size: 1.75rem;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.structure-list li {
+  padding: 12px 0;
+  border-bottom: 1px solid rgba(0,0,0,0.05);
+  font-weight: 500;
+}
+
+.structure-card.highlight .structure-list li {
+  border-bottom-color: rgba(255,255,255,0.1);
+}
+
+.structure-list i {
+  color: var(--color-soft-sage);
+}
+
+.structure-card.highlight i {
+  color: var(--color-champagne);
+}
+
+.structure-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.05);
+}
+
+/* OUR PROCESS STYLES */
+.process-steps {
+  position: relative;
+}
+
+/* Línea vertical decorativa que une los números */
+.process-steps::before {
+  content: "";
+  position: absolute;
+  left: 25px;
+  top: 10px;
+  bottom: 10px;
+  width: 1px;
+  background-color: var(--color-champagne);
+  opacity: 0.3;
+  z-index: 0;
+}
+
+.process-item {
+  position: relative;
+  z-index: 1;
+}
+
+.step-number {
+  width: 50px;
+  height: 50px;
+  background-color: var(--color-soft-sage);
+  color: var(--color-black);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 1.2rem;
+  flex-shrink: 0;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+.step-text h5 {
+  color: var(--color-deep-green);
+  margin-bottom: 5px;
+  letter-spacing: 0.05em;
+}
+
+.process-item:hover .step-number {
+  background-color: var(--color-deep-green);
+  color: white;
+  transition: all 0.3s ease;
+}
+
+/* FORMULARIO PREMIUM */
+.form-premium {
+    background-color: var(--color-ivory);
+    border: 1px solid var(--color-warm-gray);
+    border-radius: 12px;
+    padding: 12px 18px;
+    transition: all 0.3s ease;
+}
+
+.form-premium:focus {
+    background-color: white;
+    border-color: var(--color-soft-sage);
+    box-shadow: 0 0 0 4px rgba(168, 184, 165, 0.1);
+    outline: none;
+}
+
+.form-premium::placeholder {
+    color: var(--color-black);
+    opacity: 0.3;
+    font-size: 0.9rem;
+}
+
+/* Ajuste específico para el botón de ancho completo */
+.btn-dark-premium.w-100 {
+    font-size: 1.1rem;
+    letter-spacing: 0.02em;
 }
 
 /* FOOTER */
